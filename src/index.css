@@ -1,0 +1,127 @@
+/* General Reset */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #121212; /* Dark background */
+  color: #e0e0e0; /* Light text color */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+/* Container Styling */
+div {
+  width: 400px;
+  background-color: #1e1e1e; /* Slightly lighter dark background */
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5); /* Subtle shadow for depth */
+  text-align: center;
+}
+
+/* Heading Styling */
+h1 {
+  margin: 0 0 20px 0;
+  font-size: 24px;
+  color: #4CAF50; /* Vibrant green for heading */
+}
+
+/* Input Section */
+.input {
+  display: flex;
+  margin-bottom: 20px;
+  gap: 10px;
+}
+
+.input input {
+  flex: 1;
+  padding: 10px;
+  border: 1px solid #333;
+  border-radius: 4px;
+  font-size: 14px;
+  background-color: #2e2e2e; /* Darker input background */
+  color: #e0e0e0;
+  outline: none;
+}
+
+.input input::placeholder {
+  color: #757575; /* Subtle placeholder color */
+}
+
+.input input:focus {
+  border-color: #4CAF50; /* Green border on focus */
+  box-shadow: 0 0 5px rgba(76, 175, 80, 0.5);
+}
+
+.input button {
+  padding: 10px 20px;
+  background-color: #4CAF50; /* Green buttons */
+  border: none;
+  border-radius: 4px;
+  color: #fff;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background-color 0.3s ease;
+}
+
+.input button:hover {
+  background-color: #45a049; /* Slightly brighter green on hover */
+}
+
+/* Task List Styling */
+.tasks ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.tasks li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  margin-bottom: 5px;
+  border: 1px solid #333; /* Border for task items */
+  border-radius: 4px;
+  background-color: #2e2e2e; /* Dark background for tasks */
+  color: #e0e0e0; /* Light text */
+  transition: background-color 0.3s ease;
+}
+
+.tasks li:hover {
+  background-color: #3e3e3e; /* Slightly lighter background on hover */
+}
+
+/* Buttons for Each Task */
+.tasks button {
+  margin-left: 5px;
+  padding: 5px 10px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 12px;
+  transition: background-color 0.3s ease;
+}
+
+.tasks button:hover {
+  opacity: 0.9;
+}
+
+/* Move Up Button */
+.tasks button:first-child {
+  background-color: #4CAF50; /* Green */
+  color: #fff;
+}
+
+/* Move Down Button */
+.tasks button:nth-child(2) {
+  background-color: #2196F3; /* Blue */
+  color: #fff;
+}
+
+/* Delete Button */
+.tasks button:nth-child(3) {
+  background-color: #f44336; /* Red */
+  color: #fff;
+}
